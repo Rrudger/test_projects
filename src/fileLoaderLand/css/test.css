@@ -1,0 +1,21 @@
+.test {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 88, 67, 0.06) 88%, rgba(2, 44, 34, 0) 100%);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+   appearance: none;
+   margin-top: -12px;
+   border-radius: 50px;
+   background-color: #BEF264;
+   height: 40px;
+   width: 40px;
+}
+
+input[type="range"]::-moz-range-thumb {
+   border: none;
+   border-radius: 50px;
+   background-color: #BEF264;
+   height: 40px;
+   width: 40px;
+}

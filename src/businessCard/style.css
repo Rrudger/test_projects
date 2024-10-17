@@ -1,0 +1,179 @@
+@keyframes nextSlide {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  25% {
+    transform: translateX(-75%);
+    opacity: 0.5;
+  }
+
+  50% {
+     transform: translateX(-50%);
+     opacity: 0.5;
+  }
+
+  75% {
+    transform: translateX(-25%);
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes prevSlide {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  25% {
+    transform: translateX(75%);
+    opacity: 0.5;
+  }
+
+  50% {
+     transform: translateX(50%);
+     opacity: 0.5;
+  }
+
+  75% {
+    transform: translateX(25%);
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes btn_move {
+  0% {
+    transform: translateX(-50px);
+  }
+
+  25% {
+    transform: translateX(0) rotate(-45deg);
+  }
+
+  50% {
+     transform: translateX(50) rotate(-90deg);
+  }
+
+  75% {
+    transform: translateX(0) rotate(-135deg);
+  }
+
+  100% {
+    transform: translateX(-50px) rotate(-180deg);
+  }
+}
+
+@keyframes btn_move_reverse {
+  0% {
+    transform: translateX(-50px);
+  }
+
+  25% {
+    transform: translateX(0) rotate(45deg);
+  }
+
+  50% {
+     transform: translateX(50) rotate(90deg);
+  }
+
+  75% {
+    transform: translateX(0) rotate(135deg);
+  }
+
+  100% {
+    transform: translateX(-50px) rotate(180deg);
+  }
+}
+
+.book_btn {
+  transform: translateX(-50px);
+}
+
+.btn_rotate {
+  transform: translateX(-50px) rotate(180deg);
+}
+
+.btn_move {
+  animation: btn_move 1.5s linear forwards;
+}
+
+.btn_move_rev {
+  animation: btn_move_reverse 1.5s linear reverse forwards;
+}
+
+.move_right {
+  animation-name: nextSlide;
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+}
+
+.move_left {
+  animation-name: prevSlide;
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+}
+
+@keyframes show_animation {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+     opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade_animation {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.75;
+  }
+
+  50% {
+     opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.25;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.show_animation {
+  animation: 2s linear forwards show_animation;
+}
+
+.fade_animation {
+  animation: 2s linear forwards fade_animation;
+}
+
+.slide_review {
+  box-shadow: -5px 5px 25px -5px rgb(0 0 0 / 0.1), -5px 5px 10px -6px rgb(0 0 0 / 0.1);
+}
