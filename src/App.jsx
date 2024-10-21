@@ -10,9 +10,9 @@ function App() {
     <BrowserRouter>
         <Routes>
           <Route exact path="*" element={<Page404 />} />
-          <Route exact path="/" element={<MainPage />} />
-          <Route exact path='/fileLoader' element={<FileLoader />} />
-          <Route exact path='/businessCard' element={<BusinessCard />} />
+          <Route exact path="/dist/" element={<MainPage />} />
+          <Route exact path='/dist/fileLoader' element={<FileLoader />} />
+          <Route exact path='/dist/businessCard' element={<BusinessCard />} />
         </Routes>
       </BrowserRouter>
   );
