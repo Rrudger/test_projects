@@ -15,17 +15,17 @@ const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : 'style-loader
 const config = {
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, 'build'),
+        path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
     },
     resolve: {
        extensions: ['.js', '.jsx']
    },
-   devServer: {
-        open: true,
-        allowedHosts:  ['all'],
-        historyApiFallback: true,
-        host: 'localhost',
+    devServer: {
+      host: 'localhost',
+      open: true,
+      allowedHosts:  ['all'],
+      historyApiFallback: true,
     },
     plugins: [
       new HtmlWebpackPlugin({ template: './public/index.html'}),
@@ -33,9 +33,8 @@ const config = {
       patterns: [
         {
         from: 'public/assets',
-          to: 'assets',
-          noErrorOnMissing: true
-        },
+          to: 'assets'
+        }
       ],
     }),
     ],

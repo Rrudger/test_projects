@@ -3,7 +3,7 @@ import FileInputIcon from '../assets/fileInput.svg';
 
 const Slider = ({ value, setValue }) => {
   const min = 0;
-  const max = 32;
+  const max = 64;
 
   return (
     <div className='my-3 font_color_range'>
@@ -78,7 +78,9 @@ const FileInput = ({ id, title, value, setValue }) => {
             className={`block flex flex-row items-center
             text-sm text-slate-500 my-2 ml-2 mr-4 py-2 px-4
             rounded-md border-0 text-sm font-semibold
-            bg-primary text-white cursor-pointer`}
+            bg-primary text-white cursor-pointer
+            transition ease-in-out delay-150 hover:scale-x-110 hover:scale-y-125 duration-300
+            `}
           >
           <FileInputIcon className='mr-2'/>
             Choose file
@@ -90,14 +92,11 @@ const FileInput = ({ id, title, value, setValue }) => {
   )
 };
 
-const LeftPart = () => {
+const LeftPart = ({ fontColor, setFontColor, bgSubs, setbgSubs, fontSize, setFontSize }) => {
   const [selectedVideo, setSelectedVideo] = useState("No file chosen");
   const [selectedMp3, setSelectedMp3] = useState("No file chosen");
   const [selectedText, setSelectedText] = useState("No file chosen");
   const [selectedFont, setSelectedFont] = useState("No file chosen");
-  const [fontColor, setFontColor] = useState('#FFFFFF');
-  const [subsColor, setSubsColor] = useState('#000000B2');
-  const [fontSize, setFontSize] = useState(16);
 
   const handleSubmit = () => {
     console.log('click');
@@ -154,13 +153,16 @@ const LeftPart = () => {
       <InputColor
         id='subs_color'
         title='Subtitles Background Color:'
-        value={subsColor}
-        setValue={setSubsColor}
+        value={bgSubs}
+        setValue={setbgSubs}
       />
 
       <button
         onClick={handleSubmit}
-        className='rounded-full border border-black p-3 mt-10 font-medium'>
+        className={`
+          transition ease-in-out delay-150 hover:scale-110 hover:bg-primary hover:text-secondary duration-300
+          rounded-full border border-2 border-primary p-3 mt-10 font-medium
+          `}>
         Process
       </button>
     </div>
