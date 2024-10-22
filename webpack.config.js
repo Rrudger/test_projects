@@ -16,9 +16,12 @@ const config = {
     entry: './src/index.js',
     output: {
         filename: 'bundle.js',
-        publicPath: "./",
+        publicPath: "/",
     },
     devServer: {
+      host: 'localhost',
+      open: true,
+      allowedHosts:  ['all'],
       historyApiFallback: true,
     },
     plugins: [
