@@ -16,6 +16,7 @@ const config = {
     entry: './src/index.js',
     output: {
         filename: 'bundle.js',
+        publicPath: "/",
     },
     resolve: {
        extensions: ['.js', '.jsx']
@@ -24,7 +25,7 @@ const config = {
       host: 'localhost',
       open: true,
       allowedHosts:  ['all'],
-      historyApiFallback: true,
+       historyApiFallback: { index: "/", disableDotRule: true }
     },
     plugins: [
       new HtmlWebpackPlugin({ template: './public/index.html'}),
