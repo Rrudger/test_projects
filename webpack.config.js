@@ -18,6 +18,9 @@ const config = {
         filename: 'bundle.js',
         publicPath: "./",
     },
+  resolve: {
+    extensions: [".jsx", ".js"],
+  },
     devServer: {
       host: 'localhost',
       open: true,
