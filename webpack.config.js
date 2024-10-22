@@ -16,7 +16,7 @@ const config = {
     entry: './src/index.js',
     output: {
         filename: 'bundle.js',
-        publicPath: "/",
+        publicPath: "./",
     },
     devServer: {
       host: 'localhost',
