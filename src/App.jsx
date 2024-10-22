@@ -7,14 +7,14 @@ import BusinessCard from './businessCard/BusinessCard.jsx';
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
         <Routes>
           <Route path="*" element={<Page404 />} />
           <Route path="/" element={<MainPage />} />
-          <Route path="/fileLoader" element={<FileLoader />} />
-          <Route path='/businessCard' element={<BusinessCard />} />
+          <Route path="fileLoader" element={<FileLoader />} />
+          <Route path='businessCard' element={<BusinessCard />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
   );
 }
 
