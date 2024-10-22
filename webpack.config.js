@@ -18,14 +18,11 @@ const config = {
         filename: 'bundle.js',
         publicPath: "/",
     },
-    resolve: {
-       extensions: ['.js', '.jsx']
-   },
     devServer: {
       host: 'localhost',
       open: true,
       allowedHosts:  ['all'],
-       historyApiFallback: { index: "/", disableDotRule: true }
+       historyApiFallback: { index: "/index.html", disableDotRule: true }
     },
     plugins: [
       new HtmlWebpackPlugin({ template: './public/index.html'}),
