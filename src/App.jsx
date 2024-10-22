@@ -7,7 +7,6 @@ import BusinessCard from './businessCard/BusinessCard.jsx';
 
 function App() {
   return (
-    <BrowserRouter>
     <Router>
     <Switch>
           <Route exact path="/">
@@ -19,7 +18,6 @@ function App() {
         </Switch>
         </Router>
       
-      </BrowserRouter>
   );
 }
 
