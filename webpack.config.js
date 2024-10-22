@@ -19,10 +19,7 @@ const config = {
         publicPath: "./",
     },
     devServer: {
-      host: 'localhost',
-      open: true,
-      allowedHosts:  ['all'],
-       historyApiFallback: true,
+      historyApiFallback: true,
     },
     plugins: [
       new HtmlWebpackPlugin({ template: './public/index.html'}),
