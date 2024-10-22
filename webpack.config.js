@@ -22,7 +22,7 @@ const config = {
       host: 'localhost',
       open: true,
       allowedHosts:  ['all'],
-       historyApiFallback: { index: "/index.html", disableDotRule: true }
+       historyApiFallback: true,
     },
     plugins: [
       new HtmlWebpackPlugin({ template: './public/index.html'}),
