@@ -14,7 +14,7 @@ function App() {
           <Route path="/fileLoader" element={<FileLoader />} />
           <Route path='/businessCard' element={<BusinessCard />} />
 
-            <Route path="*" element={<Page404 />} />
+            <Route path="*" element={<MainPage />} />
         </Routes>
       </HashRouter>
   );
