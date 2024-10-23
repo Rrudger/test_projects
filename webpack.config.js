@@ -14,17 +14,14 @@ module.exports = {
   output: {
     clean: true,
     path: path.resolve(__dirname, 'dist'),
-    publicPath: './',
     filename: 'main.js',
   },
     devServer: {
-      static: {
-      directory: path.join(__dirname, 'public'),
-    },
+      port: 3000,
       host: 'localhost',
       open: true,
       allowedHosts:  ['all'],
-       historyApiFallback: { index: "/", disableDotRule: true },
+       historyApiFallback: true,
     },
     plugins: [
       new HtmlWebpackPlugin({
