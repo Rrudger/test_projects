@@ -1,2 +1,2 @@
-Is deployed on render.com:
+Render.com:
 https://test-projects-cuba.onrender.com
