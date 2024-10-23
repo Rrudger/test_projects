@@ -10,11 +10,11 @@ function App() {
   return (
     <HashRouter>
         <Routes>
-          <Route to="/" element={<MainPage />} />
+          <Route path="/" element={<MainPage />} />
           <Route path="/fileLoader" element={<FileLoader />} />
           <Route path='/businessCard' element={<BusinessCard />} />
 
-            <Route path="*" element={<MainPage />} />
+            <Route path="*" element={<Page404 />} />
         </Routes>
       </HashRouter>
   );
