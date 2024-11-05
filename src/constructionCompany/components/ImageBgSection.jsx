@@ -7,7 +7,7 @@ const ImageBgSection = () => {
       lg:mt-48 mt-56 lg:mx-24 mx-8
       flex sm:flex-row flex-col text-white
       `}>
-      <div className='lg:mt-10 sm:mt-0 mt-10'>
+      <div className='lg:mt-16 sm:mt-0 mt-10'>
         <div className='lg:text-[64px] sm:leading-snug leading-tight text-3xl text-nowrap'>
           Civil <span className='font-bold'>Engineering Solutions </span><br/>
           For The <span className='font-bold'>Cement </span> Industry
