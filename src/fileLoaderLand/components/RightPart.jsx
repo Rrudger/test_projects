@@ -2,8 +2,8 @@ const RightPart = ({ fontColor, bgSubs, fontSize }) => {
 
   const fontStyle = {
     color: fontColor,
-    'background-color': bgSubs,
-    'font-size': Number(fontSize),
+    'backgroundColor': bgSubs,
+    'fontSize': Number(fontSize),
   };
 
   return (

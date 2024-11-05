@@ -10,6 +10,9 @@ const MainPage = () => {
         <div className='p-4'>
           <Link to="/businessCard">business card</Link>
         </div>
+        <div className='p-4'>
+          <Link to="/constructionCompany">construction company</Link>
+        </div>
       </div>
     </div>
   )

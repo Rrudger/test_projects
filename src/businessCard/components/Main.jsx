@@ -5,7 +5,7 @@ const Main = () => {
   return (
     <div className={`
       flex sm:flex-row flex-col
-      h-screen w-screen
+      w-screen
       -mt-[60px]
       `}>
       <MainLeft />
