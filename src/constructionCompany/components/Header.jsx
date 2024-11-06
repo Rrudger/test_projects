@@ -2,7 +2,7 @@ const Header = () => {
   return (
     <div className={`
       absolute top-0 z-50
-      w-full py-8 lg:pl-12 lg:pr-0 px-4
+      w-full py-8 lg:pl-12 pr-0 px-4
       flex flex-row flex-wrap lg:gap-y-4 sm:gap-y-8 gap-y-4 items-center justify-between
       text-white text-lg capitalize
       `}>

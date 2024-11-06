@@ -17,6 +17,7 @@ module.exports = {
               cc_secondary: '#DA5D24',
               cc_secondary_hover: '#BA4E1D',
               cc_grey: '#ABB5C7',
+              cc_black: '#313131',
 
             },
             fontFamily: {
