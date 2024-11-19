@@ -17,8 +17,9 @@ module.exports = {
               cc_secondary: '#DA5D24',
               cc_secondary_hover: '#BA4E1D',
               cc_grey: '#ABB5C7',
+              cc_ligth_grey: '#e2e2e2',
               cc_black: '#313131',
-
+              cc_dark_grey: '#2F3034',
             },
             fontFamily: {
               afacad: ['"Afacad Flux"', "sans-serif"],
@@ -26,6 +27,15 @@ module.exports = {
               montserrat: ["Montserrat", "sans-serif"],
               source: ['"Source Sans 3"', "sans-serif"],
             },
+            keyframes: {
+              fade_in: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+              },
+            },
+            animation: {
+              'fadeIn': 'fade_in 2s linear'
+            }
         },
     },
     plugins: [],

@@ -2,6 +2,8 @@ import './style.css';
 import Header from './components/Header.jsx';
 import ImageBgSection from './components/ImageBgSection.jsx';
 import Section2 from './components/Section2.jsx';
+import Section3 from './components/Section3.jsx';
+import Section4 from './components/Section4.jsx';
 
 const ConstructionCompany = () => {
   return (
@@ -11,7 +13,7 @@ const ConstructionCompany = () => {
 
         <div id='image_bg_sec' className='relative h-screen'>
           <ImageBgSection />
-          <div className='absolute h-full w-full bg_gradient opacity-85 z-40'>
+          <div className='absolute h-full w-full bg_gradient opacity-85 z-30'>
           </div>
           <div
             style={{ backgroundImage: "url('./assets/bg_cc.jpeg')"}}
@@ -24,8 +26,9 @@ const ConstructionCompany = () => {
           <Section2 />
         </div>
         <div className='h-screen bg-white'>
-          main 3
+          <Section3 />
         </div>
+        <Section4 />
       </div>
     </div>
   )

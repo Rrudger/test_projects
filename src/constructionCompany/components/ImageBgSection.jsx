@@ -3,7 +3,7 @@ import WhiteBgSection from './WhiteBgSection.jsx';
 const ImageBgSection = () => {
   return (
     <div className={`
-      absolute w-full opacity-100 z-50
+      absolute w-full opacity-100 z-40
       sm:mt-48 mt-56 lg:mx-24 mx-8
       flex lg:flex-row flex-col text-white
       `}>
@@ -50,7 +50,7 @@ const ImageBgSection = () => {
         `}>
         <div className='relative sm:h-32 h-16 sm:w-32 w-16 '>
           <div className={`
-            z-40 absolute
+            z-30 absolute
             h-full w-full border border-cc_secondary
             -inset-x-4 -inset-y-4
             `}>
@@ -65,7 +65,7 @@ const ImageBgSection = () => {
         </div>
         <div className='relative sm:h-40 h-20 sm:w-40 w-20'>
           <div className={`
-            z-40 absolute
+            z-30 absolute
             h-full w-full border border-white
             inset-x-4 -inset-y-4
             `}>
@@ -80,7 +80,7 @@ const ImageBgSection = () => {
         </div>
         <div className='relative sm:h-44 h-24 sm:w-44 w-24 mt-6'>
           <div className={`
-            z-40 absolute
+            z-30 absolute
             h-full w-full border border-white
             -inset-x-4 inset-y-4
             `}>
@@ -99,13 +99,13 @@ const ImageBgSection = () => {
           h-44 w-44 mt-8 ml-6
           `}>
           <div className={`
-            z-40 absolute
+            z-30 absolute
             h-[600px] w-[600px] border border-white
             -inset-x-4 inset-y-4
             `}>
           </div>
           <div className={`
-            z-40 absolute
+            z-30 absolute
             h-[600px] w-[600px] border border-cc_secondary
             inset-x-4 -inset-y-4
             `}>
@@ -123,8 +123,8 @@ const ImageBgSection = () => {
           `}>
 
           <div id='white_sec' className={`
-            absolute right-0 z-40 bg-white
-            lg:h-[2500px] lg:w-[3000px]
+            absolute right-0 z-30 bg-white
+            lg:h-[1300px] lg:w-[3000px]
             sm:h-[2000px] sm:w-[2000px]
             h-[800px] w-[1200px]
           `}>
