@@ -4,7 +4,7 @@ const Section3 = () => {
   const w = window.screen.width;
 
   return (
-    <div className='relative h-full z-50 flex flex-col text-center text-lg'>
+    <div className='relative h-full z-50 flex flex-col text-center text-lg leading-tight'>
       <div className='lg:mt-24 -mt-80 flex flex-col items-center'>
         <div className='text-cc_grey font-semibold'>
           <div>
@@ -24,7 +24,7 @@ const Section3 = () => {
         </div>
       </div>
       <div className={`
-        lg:h-1/2 sm:h-1/2 h-3/4 mt-auto relative
+        lg:h-1/2 sm:h-full h-3/4 lg:mt-0 sm:mt-20 mt-auto relative overflow-hidden
       `}>
         <div
           style={{width: `${w + w/10}px`}}

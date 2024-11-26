@@ -32,7 +32,7 @@ const Slide = ({ text, num, img }) => {
         </span>
       </div>
       <div className={`
-        group-hover:text-white mt-40
+        group-hover:text-white mt-40  leading-tight
         text-lg text-cc_dark_grey lg:text-left text-center font-extrabold
       `}>
         {text}

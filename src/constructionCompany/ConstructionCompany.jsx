@@ -4,6 +4,7 @@ import ImageBgSection from './components/ImageBgSection.jsx';
 import Section2 from './components/Section2.jsx';
 import Section3 from './components/Section3.jsx';
 import Section4 from './components/Section4.jsx';
+import Section5 from './components/Section5.jsx';
 
 const ConstructionCompany = () => {
   return (
@@ -25,10 +26,11 @@ const ConstructionCompany = () => {
         <div id='blue_sec' className='h-screen bg-cc_primary'>
           <Section2 />
         </div>
-        <div className='h-screen bg-white'>
+        <div className='lg:h-screen sm:h-[600px] bg-white'>
           <Section3 />
         </div>
         <Section4 />
+        <Section5 />
       </div>
     </div>
   )
