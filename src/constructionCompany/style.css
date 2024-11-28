@@ -1,3 +1,35 @@
 .bg_gradient {
   background-image: linear-gradient(to right bottom, #06255B, rgba(255,0,0,0));
 }
+
+@keyframes nextSlide {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  25% {
+    transform: translateX(-75%);
+    opacity: 0.5;
+  }
+
+  50% {
+     transform: translateX(-50%);
+     opacity: 0.5;
+  }
+
+  75% {
+    transform: translateX(-25%);
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.move_right {
+  animation-name: nextSlide;
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+}

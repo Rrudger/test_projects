@@ -16,6 +16,7 @@ module.exports = {
               cc_primary: '#06255B',
               cc_primary_hover: '#1D4A99',
               cc_secondary: '#DA5D24',
+              cc_secondary2: '#FF7C40',
               cc_secondary_hover: '#BA4E1D',
               cc_grey: '#ABB5C7',
               cc_ligth_grey: '#e2e2e2',
@@ -36,7 +37,7 @@ module.exports = {
               },
             },
             animation: {
-              'fadeIn': 'fade_in 2s linear'
+              'fadeIn': 'fade_in 2s linear',
             }
         },
     },
