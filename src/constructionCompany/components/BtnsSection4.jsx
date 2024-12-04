@@ -6,7 +6,7 @@ const Btns = ({ forward, back, visible }) => {
     'lg:hidden': visible === 'sm',
     'lg:flex hidden': visible === 'lg',
    }
-)
+);
 
   return (
     <div className={classes}>
