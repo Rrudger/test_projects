@@ -1,8 +1,8 @@
-const Section7Title = ({ title }) => {
+const Section7Title = ({ title, variant }) => {
   return (
-    <div className='relative ml-40 mb-16 -rotate-90'>
-      <div className='absolute right-0'>
-        <div className='relative text-nowrap text-3xl font-light z-50'>
+    <>
+      <div className={variant ? 'absolute left-0 top-0' : 'absolute left-0'} >
+        <div className='relative w-12 overflow-visible text-nowrap text-3xl font-light z-50'>
           {title}
         </div>
         <div className={`
@@ -12,7 +12,7 @@ const Section7Title = ({ title }) => {
           ******
         </div>
       </div>
-    </div>
+    </>
   )
 };
 

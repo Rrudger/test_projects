@@ -15,8 +15,10 @@ const Section7 = () => {
       </div>
 
       <div className='flex flex-col divide-y-2 divide-dashed divide-cc_ligth_grey'>
-        <div className='flex flex-row mt-12'>
-          <Title title='Leadership Team'/>
+        <div className='flex flex-row items-end my-12'>
+          <div className='relative w-[170px] h-32 -rotate-90 origin-center'>
+            <Title title='Leadership Team' />
+          </div>
 
           <ManagmentCard
             name='Sophia Carter'
@@ -32,8 +34,11 @@ const Section7 = () => {
           />
         </div>
 
-        <div className='flex flex-row py-12'>
-          <Title title='Engineers' />
+        <div className='flex flex-row items-end py-12'>
+          <div className='relative w-96 h-32 -rotate-90 origin-center'>
+            <Title title='Engineers' />
+          </div>
+
           <div className='grid grid-cols-6 gap-x-2'>
             <StaffCard
               name='Bernhard Meyer'
@@ -57,8 +62,11 @@ const Section7 = () => {
           </div>
         </div>
 
-        <div className='flex flex-row py-12'>
-          <Title title='Technical staff' />
+        <div className='flex flex-row items-end py-12'>
+          <div className='relative w-96 h-32 -rotate-90 origin-center'>
+            <Title title='Technical staff' />
+          </div>
+
           <div className='grid grid-cols-6 gap-x-2'>
             <StaffCard
               name='Domenik Schmidt'
@@ -87,30 +95,29 @@ const Section7 = () => {
           </div>
         </div>
 
-        <div className='flex flex-row gap-x-12'>
-          <div className='flex flex-row'>
-          <Title title='Engineering Trainees' />
-          <div className='grid grid-cols-3 gap-x-2'>
-          <StaffCard
-            name='Celia Thorne'
-            position='Project Engineer'
-          />
-          <StaffCard
-            name='Leonie Kahr'
-            position='Project Engineer'
-          />
-          </div>
+        <div className='flex flex-row items-end py-12'>
+          <div className='relative w-96 h-32 -rotate-90 origin-center'>
+            <Title title='Engineering Trainees' />
           </div>
 
-          <div className='flex flex-row'>
-          <Title title='Other Team Members' />
-          <div className='grid grid-cols-3'>
-          <StaffCard
-            name='Michelle Michalik'
-            position='Assistent to the Management'
-          />
+          <div className='grid grid-cols-6 items-end gap-x-2'>
+            <StaffCard
+              name='Celia Thorne'
+              position='Project Engineer'
+            />
+            <StaffCard
+              name='Leonie Kahr'
+              position='Project Engineer'
+            />
+            <div className='translate-x-[180px] relative w-12 h-12 -rotate-90 origin-center'>
+              <Title title='Other Team Members' variant='2' />
+            </div>
+            <StaffCard
+              name='Michelle Michalik'
+              position='Assistent to the Management'
+            />
           </div>
-          </div>
+
         </div>
 
       </div>
