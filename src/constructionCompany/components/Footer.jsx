@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div
       style={{ backgroundImage: "url('./assets/cc_bg_footer.png')"}}
-      className='w-screen flex flex-col justify-start bg-cover bg-center relative z-10'
+      className='w-screen mt-32 flex flex-col justify-start bg-cover bg-center relative z-10'
     >
       <div className={`
         py-12 pl-12 mt-12 ml-2

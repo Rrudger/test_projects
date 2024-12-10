@@ -4,7 +4,7 @@ const DefaultRow = () => {
   return (
     <div className='flex flex-row gap-x-4'>
       You?
-      <button className='rounded-full bg-cc_secondary2 text-white text-sm px-4'>
+      <button className='rounded-full bg-cc_secondary2 hover:bg-cc_secondary text-white text-sm px-4'>
         Apply Now
       </button>
     </div>

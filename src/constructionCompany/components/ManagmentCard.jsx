@@ -6,16 +6,16 @@ import {  lowerCase } from 'lodash';
 const ManagmentCard = ({ name, position, text, variant }) => {
   const shadowClasses = classNames('absolute h-1/2 w-full inset-y-1/2',
   {
-    'bg-cc_secondary -skew-y-[30deg] rotate-6 origin-bottom-right': variant === '0',
+    'bg-cc_secondary sm:-skew-y-[30deg] -skew-y-[6deg] sm:left-auto left-[20px] sm:rotate-6 -rotate-6 sm:origin-bottom-right origin-bottom': variant === '0',
     'bg-cc_primary -skew-y-[6deg] left-[20px] -rotate-6 origin-bottom': variant === '1',
    }
  );
-  const rowClasses = classNames('mr-12 flex flex-row',
+  const rowClasses = classNames('mr-12 sm:mt-0 mt-12 flex sm:flex-row flex-col',
  {
-   'overflow-hidden': variant === '0',
+   'sm:overflow-hidden': variant === '0',
   }
 );
-  const colClasses = classNames('w-1/2 flex flex-col gap-y-8 pl-12',
+  const colClasses = classNames('sm:w-1/2 flex flex-col gap-y-8 sm:pl-12 pl-4 sm:mt-0 mt-12',
   {
      'z-50 bg-white': variant === '1',
   }
@@ -27,7 +27,7 @@ const photo  = lowerCase(name).split(' ').join('_');
 
   return (
     <div className={rowClasses}>
-      <div className='relative flex w-[300px] h-[350px]'>
+      <div className='relative flex sm:w-[300px] w-full h-[350px]'>
         <img
           className='object-cover z-50'
           src={`./assets/photo_staff/${photo}.jpg`}

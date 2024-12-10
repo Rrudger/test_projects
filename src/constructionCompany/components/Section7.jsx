@@ -4,8 +4,8 @@ import Title from './Section7Title.jsx';
 
 const Section7 = () => {
   return (
-    <div className='flex flex-col m-20'>
-      <div className='w-1/4 mb-12'>
+    <div className='flex flex-col sm:m-20 m-4'>
+      <div className='lg:w-1/4 mb-12'>
         <div className='font-bold text-4xl my-8'>
           Meet the Team
         </div>
@@ -15,8 +15,8 @@ const Section7 = () => {
       </div>
 
       <div className='flex flex-col divide-y-2 divide-dashed divide-cc_ligth_grey'>
-        <div className='flex flex-row items-end my-12'>
-          <div className='relative w-[170px] h-32 -rotate-90 origin-center'>
+        <div className='lg:flex flex-row grid grid-cols-1 gap-y-4 items-end lg:my-12 my-4'>
+          <div className='relative lg:w-[170px] lg:h-32 sm:h-16 lg:-rotate-90 origin-center'>
             <Title title='Leadership Team' />
           </div>
 
@@ -34,12 +34,12 @@ const Section7 = () => {
           />
         </div>
 
-        <div className='flex flex-row items-end py-12'>
-          <div className='relative w-96 h-32 -rotate-90 origin-center'>
+        <div className='flex lg:flex-row flex-col lg:items-end items-start py-12'>
+          <div className='relative lg:w-96 lg:h-32 h-16 lg:-rotate-90 origin-center'>
             <Title title='Engineers' />
           </div>
 
-          <div className='grid grid-cols-6 gap-x-2'>
+          <div className='grid lg:grid-cols-6 sm:grid-cols-3 gap-x-2 gap-y-8'>
             <StaffCard
               name='Bernhard Meyer'
               position='Senior Steel Structures Engineer'
@@ -62,12 +62,12 @@ const Section7 = () => {
           </div>
         </div>
 
-        <div className='flex flex-row items-end py-12'>
-          <div className='relative w-96 h-32 -rotate-90 origin-center'>
+        <div className='flex lg:flex-row flex-col lg:items-end items-start py-12'>
+          <div className='relative lg:w-96 lg:h-32 h-16 lg:-rotate-90 origin-center'>
             <Title title='Technical staff' />
           </div>
 
-          <div className='grid grid-cols-6 gap-x-2'>
+          <div className='grid lg:grid-cols-6 sm:grid-cols-3 gap-x-2 gap-y-8'>
             <StaffCard
               name='Domenik Schmidt'
               position='Head of Layout & Design'
@@ -95,12 +95,13 @@ const Section7 = () => {
           </div>
         </div>
 
-        <div className='flex flex-row items-end py-12'>
-          <div className='relative w-96 h-32 -rotate-90 origin-center'>
+        <div className='flex lg:flex-row flex-col lg:items-end items-start py-12'>
+          <div className='relative lg:w-96 lg:h-32 h-16 lg:-rotate-90 origin-center'>
             <Title title='Engineering Trainees' />
           </div>
 
-          <div className='grid grid-cols-6 items-end gap-x-2'>
+          <div className='grid lg:grid-cols-6 sm:grid-cols-3 items-end gap-x-2 gap-y-8'>
+
             <StaffCard
               name='Celia Thorne'
               position='Project Engineer'
@@ -109,9 +110,22 @@ const Section7 = () => {
               name='Leonie Kahr'
               position='Project Engineer'
             />
-            <div className='translate-x-[180px] relative w-12 h-12 -rotate-90 origin-center'>
+
+            <div className='lg:block hidden translate-x-[180px] relative w-12 h-12 -rotate-90 origin-center'>
               <Title title='Other Team Members' variant='2' />
             </div>
+            <div className='lg:block hidden'>
+              <StaffCard
+                name='Michelle Michalik'
+                position='Assistent to the Management'
+              />
+            </div>
+          </div>
+
+          <div className='relative lg:hidden mt-8 h-16'>
+            <Title title='Other Team Members' />
+          </div>
+          <div className='lg:hidden grid sm:grid-cols-3 gap-x-2'>
             <StaffCard
               name='Michelle Michalik'
               position='Assistent to the Management'
