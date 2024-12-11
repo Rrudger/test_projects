@@ -11,7 +11,7 @@ function App() {
   return (
     <HashRouter>
         <Routes>
-          <Route path="/" element={<MainPage />} />
+          <Route path="/" element={<ConstructionCompany />} />
           <Route path="/fileLoader" element={<FileLoader />} />
           <Route path='/businessCard' element={<BusinessCard />} />
           <Route path='/constructionCompany' element={<ConstructionCompany />} />
